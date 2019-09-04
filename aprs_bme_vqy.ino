@@ -304,7 +304,7 @@ void connexion()
   char sentence[150];
   //wx.temperatureF = wx.temperatureF * -1;
 
-  sprintf(login, "user %s pass 18621 vers VERSION ESP8266", station.callsign);
+  sprintf(login, "user %s pass -1 vers VERSION ESP8266", station.callsign); // to change -1 to proper aprs password
   sprintf(sentence, "%s>APRS,TCPXX*:@%02d%02d%02dz%s/%s_.../...g...t%03dr...p...P...h%02db%05d", station.callsign, dateTime.hour, dateTime.minute, dateTime.second, station.latitude, station.longitude, wx.temperatureF / 10, wx.humidite, wx.pression / 10);
   Serial.println(sentence);
   //Serial.println("compare");
