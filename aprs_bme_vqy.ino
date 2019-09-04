@@ -6,7 +6,7 @@ esp8266 with BME280
 - upload weather data on aprs servers
 - local web page for weather informations and configuration
 - add GMT menu
- f4goh@orange.fr
+ author: f4goh@orange.fr modified by sp9svh@kpgk.pl
 */
 
 #include <Wire.h>
